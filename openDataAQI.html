@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>空氣品質指標(AQI)</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/font-awesome.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.2.3.min.js"></script>
+    <script src="js/all.js"></script>
+    <style>
+    </style>
+</head>
+<body>
+    <div class="menuList">
+        <ul id="countyName2">
+        </ul>
+    </div>
+    <div class="header">
+        <div class="box">
+            <div class="box1">
+                <div class="fa-stack fa-lg fa-1x st-bar">
+                    <a href="#">
+                        <i class="fa fa-bars fa-stack-1x fa-inverse"></i>
+                    </a>
+                </div>
+                <h1>空氣品質指標(AQI)</h1>
+            </div>
+        </div>
+    </div>
+    <div class="outBox">
+        <div class="box">
+            <div class="box1">
+                <div class="color-box"><div class="colorBox" style="background-color:#00e800;"></div><div class="textBox">良好</div></div>
+                <div class="color-box"><div class="colorBox" style="background-color:#ff0"></div><div class="textBox">普通</div></div>
+                <div class="color-box"><div class="colorBox" style="background-color:#ff7e00"></div><div class="textBox">小心</div></div>
+                <div class="color-box"><div class="colorBox" style="background-color:red"></div><div class="textBox">不健康</div></div>
+                <div class="color-box"><div class="colorBox" style="background-color:#8f3f97"></div><div class="textBox">非常不健康</div></div>
+                <div class="color-box"><div class="colorBox" style="background-color:#7e0023"></div><div class="textBox">危害</div></div>
+            </div>
+        </div>
+        <div class="box">
+            <div class="box1">
+                <select id="countyName"></select>
+            </div>
+        </div>
+
+        <div class="box">
+            <div class="box1">
+                <ul id="content">
+            </div>
+        </div>
+    </div>
+
+    <script type="text/javascript">
+    </script>
+    <!-- opendata from: https://data.gov.tw/dataset/40448 (空氣品質指標(AQI)) -->
+</body>
+</html>

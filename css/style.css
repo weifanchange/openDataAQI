@@ -1,0 +1,123 @@
+body{
+    font-family: Montserrat,Helvetica,arial,Microsoft JhengHei,"微軟正黑體",sans-serif;
+}
+h1{
+    font-size: 22px;
+    font-weight:bold;
+}
+.outBox{
+    /* border: 1px solid rgb(18, 238, 18); */
+    width: 90%;
+    margin: 0px auto;
+}
+.box{
+    /* border: 1px solid purple; */
+}
+.box1{
+    /* border: 1px solid red; */
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: flex-start;
+    max-width: 310px;
+    margin: 5px auto;
+}
+.box1 h1{
+    text-align: center;
+    margin: 0px auto;
+    line-height: 2;
+}
+.header{
+    /* margin:0px auto; */
+    background: rgb(96, 147, 255);
+}
+.color-box{
+    display: flex;
+    margin:5px;
+}
+.colorBox{
+    box-sizing:border-box;
+    width: 16px;
+    height: 16px;
+    /* border: 1px solid blue; */
+}
+.textBox{
+    box-sizing:border-box;
+    font-size: 14px;
+    /* border: 1px solid blue; */
+    width: 76px;
+}
+select{
+    padding: 5px 60px;
+    font-size: 16px;
+    font-weight:bold;
+    margin: 5px auto;
+}
+#content{
+    padding:0px;
+    font-size:16px;
+    font-weight:bold;
+    margin: 0px auto;
+}
+#content li{
+    list-style-type: none;
+    display: block;
+    width:150px;
+    border:1px solid black;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 1px 1px 5px #888888;
+    margin:10px;
+    padding:10px;
+    color:rgb(70, 70, 70);
+    line-height: 1.5;
+}
+.st-bar:hover, .open .st-bar{
+    background: rgb(26, 98, 253);
+    border-radius: 50%;
+}
+.menuList{
+    float: left;
+    z-index: 1;
+    position: absolute;
+    top: 0px;
+    overflow: hidden;
+    -webkit-transform: translateX(-150px);
+    transform:translateX(-150px);
+    -webkit-transition:-webkit-transform 0.3s;
+    transition:transform 0.3s;
+}
+.open .menuList{
+    -webkit-transform: translateX(0px);
+    transform:translateX(0px);
+}
+.bar-item{
+    text-decoration: none;
+    background: #f2f2f2;
+    border: 1px solid #000;
+    display: block;
+    font-size: 16px;
+    width: 150px;
+    padding: 5px;
+    line-height: 1.5;
+    text-align: center;
+    color: #000;
+    box-sizing: border-box;
+}
+.st-bar{
+    display: none;
+}
+@media only screen and (min-width: 900px) and (max-width: 1300px) {
+}
+@media only screen and (min-width: 550px) and (max-width: 900px) {
+}
+@media only screen and (max-width: 550px) {
+    .st-bar{
+        display:block;
+    }
+    #countyName{
+        display:none;
+    }
+}
+@media only screen and (max-width: 440px) {
+}
